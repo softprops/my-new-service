@@ -25,7 +25,7 @@ after_success:
 # deploy on pushes to master branch
 deploy:
   - provider: script
-    script: make deploy
+    script: make dependencies deploy
     skip_cleanup: true
     on:
       branch: master
