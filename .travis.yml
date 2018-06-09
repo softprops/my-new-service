@@ -1,3 +1,5 @@
+sudo: required
+
 # for more information on configuring a rust travis build
 # see https://docs.travis-ci.com/user/languages/rust/
 language: rust
@@ -6,6 +8,10 @@ language: rust
 cache:
   cargo: true
   apt: true
+
+services:
+  # start docker to enable lambda ci compatible build env
+  - docker
 
 addons:
   apt:
