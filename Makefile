@@ -9,7 +9,7 @@ help:
 
 dependencies: ## Install build dependencies
 	@echo "installing dependencies..."
-	@npm install serverless@1.27.3 serverless-rust@0.1.1
+	@npm install serverless@1.27.3 serverless-rust@0.1.2
 
 deploy: ## Deploy application
 	@echo "deploying function..."
